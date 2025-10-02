@@ -6,7 +6,7 @@
     --color-light-blue: #c0d1e1;
     --color-light-pink: #f2d0d6;
     --color-primary-blue: #2563eb;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -96,7 +96,7 @@ header nav a {
 
 
 .featured-products, .product-gallery {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .product-grid{
@@ -140,6 +140,13 @@ header nav a {
     font-size: 1.1em;
     font-weight: bold;
     color: var(--color-primary-blue);
+}
+
+.price-reduced {
+    font-size: 1.1em;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: var(--color-light-purple);
 }
 
 

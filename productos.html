@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <script src="productos.js" defer></script>
 <body>
     <header>
         <div class="container">
@@ -24,37 +23,74 @@
                 </ul>
             </nav>
         </div>
+        <div class="search-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <input type="text" id="search-input" placeholder="Buscar productos...">
+                    <select id="category-filter">
+                        <option value="all">Todos</option>
+                        <option value="estrella">Productos Estrella</option>
+                        <option value="pack">PACKS</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </header>
+
+    
 
     <main>
         <section class="product-gallery">
             <div class="container">
-                <h2>Nuestro Catálogo</h2>
-                <div class="product-grid-full">
-                    <div class="product-item">
-                        <img src="Images/0 stress.webp" alt="0% Stress">
-                        <h3>0% STRESS</h3>
-                        <h5>Libera el estres que se ha acumulado todo el dia</h5>
-                        <p class="price">$30.000,00</p>
+                <h2>Nuestro Catálogo:</h2>
+                <div class="product-section" data-category="estrella">
+                    <h3>Productos Estrella</h3>
+                    <div class="product-grid-full">
+
+                        <div class="product-item">
+                            <img src="Images/0 stress.webp" alt="0% Stress">
+                            <h3>0% STRESS</h3>
+                            <h5>Libera el estres que se ha acumulado todo el dia</h5>
+                            <p class="price">$30.000,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/sleep.webp" alt="Sleep">
+                            <h3>SLEEP</h3>
+                            <h5>Duerme tranquilamente durante toda la noche</h5>
+                            <p class="price">$40.000,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/magnesio.webp" alt="Magnesio">
+                            <h3>MAGNESIO</h3>
+                            <h5>Fortalece tu cuerpo y mente</h5>
+                            <p class="price">$10.000,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="Images/vit-min.webp" alt="Vit&Min">
+                            <h3>VIT&MIN</h3>
+                            <h5>Todas las vitaminas que necesitas en el dia en un solo paquete</h5>
+                            <p class="price-reduced">$50.000,00</p>
+                            <p class="price">$30.000,00</p>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <img src="Images/sleep.webp" alt="Sleep">
-                        <h3>SLEEP</h3>
-                        <h5>Duerme tranquilamente durante toda la noche</h5>
-                        <p class="price">$40.000,00</p>
-                    </div>
-                    <div class="product-item">
-                        <img src="Images/magnesio.webp" alt="Magnesio">
-                        <h3>MAGNESIO</h3>
-                        <h5>Fortalece tu cuerpo y mente</h5>
-                        <p class="price">$10.000,00</p>
-                    </div>
-                    <div class="product-item">
-                        <img src="Images/vit-min.webp" alt="Vit&Min">
-                        <h3>VIT&MIN</h3>
-                        <h5>Todas las vitaminas que necesitas en el dia en un solo paquete</h5>
-                        <p class="price-reduced">$50.000,00</p>
-                        <p class="price">$30.000,00</p>
+                </div>
+                <div class="product-section" data-category="pack">
+                    <h3>PACKS</h3>
+                    <div class="product-grid-full">
+                        <div class="product-item">
+                            <img src="" alt="Pack SLEEP&MIN">
+                            <h3>SLEEP&MIN</h3>
+                            <h4>Duerme y recupera energias aun mas rapido</h4>
+                            <p class="price-reduced">$70.000,00</p>
+                            <p class="price">$55.000,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="" alt="Pack NO STRESS">
+                            <h3>NO STRESS</h3>
+                            <h4>Despierto o dormido, puedes estar sin preocuparte</h4>
+                            <p class="price-reduced">$70.000,00</p>
+                            <p class="price">$50.000,00</p>
+                        </div>
                     </div>
                 </div>
             </div>

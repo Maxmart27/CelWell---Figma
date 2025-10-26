@@ -7,13 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="productos.js" defer></script>
+    
 <body>
     <header>
         <div class="container">
             <a href="index.html" class="logo-link">
                 <img src="Images/celwell logo.webp" alt="Logo CelWell" class="logo">
             </a>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -30,7 +35,7 @@
                     <select id="category-filter">
                         <option value="all">Todos</option>
                         <option value="estrella">Productos Estrella</option>
-                        <option value="pack">PACKS</option>
+                        <option value="planes">Planes</option>
                     </select>
                 </div>
             </div>
@@ -44,7 +49,7 @@
             <div class="container">
                 <h2>Nuestro Catálogo:</h2>
                 <div class="product-section" data-category="estrella">
-                    <h3>Productos Estrella</h3>
+                    <h3>Productos</h3>
                     <div class="product-grid-full">
 
                         <div class="product-item">
@@ -74,19 +79,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-section" data-category="pack">
-                    <h3>PACKS</h3>
+                <div class="product-section" data-category="planes">
+                    <h3>PLANES</h3>
                     <div class="product-grid-full">
                         <div class="product-item">
-                            <img src="" alt="Pack SLEEP&MIN">
-                            <h3>SLEEP&MIN</h3>
-                            <h4>Duerme y recupera energias aun mas rapido</h4>
+                            <img src="Images/bienestar digestivo plus.webp" alt="Plan Bienestar Digestivo +">
+                            <h3>BIENESTAR DIGESTIVO PLUS</h3>
+                            <h4>Mejora tu salud digestiva y mental al mismo tiempo</h4>
                             <p class="price-reduced">$70.000,00</p>
                             <p class="price">$55.000,00</p>
                         </div>
                         <div class="product-item">
-                            <img src="" alt="Pack NO STRESS">
-                            <h3>NO STRESS</h3>
+                            <img src="Images/descanso profundo.webp" alt="Plan Descanso Profundo">
+                            <h3>DESCANSO PROFUNDO</h3>
                             <h4>Despierto o dormido, puedes estar sin preocuparte</h4>
                             <p class="price-reduced">$70.000,00</p>
                             <p class="price">$50.000,00</p>
@@ -103,4 +108,7 @@
         </div>
     </footer>
 </body>
+
+<script src="javaScript/productos.js" defer></script>
+    <script src="javaScript/main.js"></script>
 </html>

@@ -95,6 +95,18 @@ header nav a {
     margin-top: 20px;
 }
 
+.btn-promo{
+    display: inline-block;
+    background-color: var(--color-light-purple);
+    color: var(--color-dark-gray);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
 
 .search-filter {
     margin-left: auto;
@@ -186,14 +198,20 @@ header nav a {
 .product-item {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 5px rgba(0,0,0,0.1);
     text-align: center;
     padding: 20px;
-    flex-basis: calc(25% - 20px);
+    flex: 0 1 calc(30% - 20px);
+}
+
+.product-item-checkbox{
+    float: right;
+    margin-bottom: 10px;
+    transform: scale(1.5);
 }
 
 .product-card img, .product-item img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     border-radius: 5px;
 }

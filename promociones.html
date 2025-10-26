@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelWell - Promociones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="Images/celwell logo.webp" alt="Logo CelWell" class="logo">
+            </a>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" style="padding:24px 20px;">
+            <h1>Promociones</h1>
+
+            <p>Seleccioná productos y cantidades. El sistema aplicará automáticamente las promociones:</p>
+            <ul>
+                <li><strong>Promo A:</strong> Llevá 2 productos y obtené 50% en el segundo (se aplica por pares del mismo producto).</li>
+                <li><strong>Promo B:</strong> 3x2 en productos seleccionados (cada 3 unidades, una gratuita).</li>
+                <li><strong>Promo C:</strong> 10% de descuento por compras superiores a $30.000 (se aplica al total final después de A y B).</li>
+            </ul>
+
+            <section class="product-gallery">
+            <div class="container">
+                <h2>Nuestro Catálogo:</h2>
+                <div class="product-section" data-category="estrella">
+                    <h3>Productos</h3>
+                    <div class="product-grid-full">
+
+                        <div class="product-item" name="stress">
+                            <input class ="product-item-checkbox" type="checkbox" id="stress" name="stressbox check" value="1">
+                            <input type="number" name="qty_stress" min="0" value="0" class="quantity-input">
+                            <img src="Images/0 stress.webp" alt="0% Stress">
+                            <h3>0% STRESS</h3>
+                            <h5>Libera el estres que se ha acumulado todo el dia</h5>
+                            <p class="price">$30.000,00</p>
+                        </div>
+                        <div class="product-item" name="sleep">
+                            <input class ="product-item-checkbox" type="checkbox" id="sleep" name="sleepbox check" value="1">
+                            <input type="number" name="qty_sleep" min="0" value="0" class="quantity-input">
+                            <img src="Images/sleep.webp" alt="Sleep">
+                            <h3>SLEEP</h3>
+                            <h5>Duerme tranquilamente durante toda la noche</h5>
+                            <p class="price">$40.000,00</p>
+                        </div>
+                        <div class="product-item" name="magnesio">
+                            <input class ="product-item-checkbox" type="checkbox" id="magnesio" name="magnesiobox check" value="1">
+                            <input type="number" name="qty_magnesio" min="0" value="0" class="quantity-input">
+                            <img src="Images/magnesio.webp" alt="Magnesio">
+                            <h3>MAGNESIO</h3>
+                            <h5>Fortalece tu cuerpo y mente</h5>
+                            <p class="price">$10.000,00</p>
+                        </div>
+                        <div class="product-item" name="vitmin">
+                            <input class ="product-item-checkbox" type="checkbox" id="vitmin" name="vitminbox check" value="1">
+                            <input type="number" name="qty_vitmin" min="0" value="0" class="quantity-input">
+                            <img src="Images/vit-min.webp" alt="Vit&Min">
+                            <h3>VIT&MIN</h3>
+                            <h5>Todas las vitaminas que necesitas en el dia en un solo paquete</h5>
+                            <p class="price-reduced">$50.000,00</p>
+                            <p class="price">$30.000,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="Calculos">
+                
+            </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CelWell. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="javaScript/main.js"></script>
+<script src="javaScript/promociones.js"></script>
+</html>

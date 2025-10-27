@@ -229,6 +229,63 @@ header nav a {
     color: var(--color-light-purple);
 }
 
+.quantity-controller {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: 1px solid var(--color-primary-blue);
+    border-radius: 20px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+.qty-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary-blue);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.qty-display {
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-primary-blue);
+}
+
+.product-item {
+    position: relative;
+}
+
+.checkbox-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.calc-button {
+    position: fixed;
+    display: none;
+    bottom: 30px;
+    left: 80%;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: var(--color-primary-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 .about-us-section {
     padding: 50px 20px;
@@ -451,6 +508,45 @@ footer {
         flex: 1;
     }
 
+    .product-grid-full {
+        gap: 12px;
+    }
+
+    .product-item {
+        flex: 0 1 calc(50% - 15px);
+    }
+
+    .product-item img {
+        max-width: 85%;
+    }
+
+    .quantity-controller {
+        top: 8px;
+        right: 8px;
+        padding: 2px 6px;
+    }
+
+    .checkbox-wrapper {
+        top: 8px;
+        right: 8px;
+    }
+
+    .product-item h3 {
+        font-size: 0.95rem;
+        margin: 10px 0 5px;
+    }
+
+    .product-item h5 {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+
+    .product-item .price,
+    .price-reduced {
+        font-size: 0.9rem;
+    }
+    
+
     .about-us-section {
         padding: 30px 12px;
     }
@@ -515,6 +611,33 @@ footer {
 
     header nav li:last-child a {
         border-bottom: none;
+    }
+
+    .product-grid-full {
+        gap: 10px;
+    }
+
+    .product-item {
+        flex: 0 1 calc(100% - 20px);
+        padding: 15px;
+    }
+
+    .product-item img {
+        max-width: 70%;
+    }
+
+    .quantity-controller {
+        padding: 2px 4px;
+    }
+
+    .qty-btn {
+        padding: 0 6px;
+        font-size: 16px;
+    }
+
+    .qty-display {
+        min-width: 16px;
+        font-size: 14px;
     }
 
     .about-us-section {

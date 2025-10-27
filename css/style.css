@@ -286,6 +286,122 @@ header nav a {
     cursor: pointer;
 }
 
+.promo-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--color-light-purple);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup-result {
+    visibility: hidden;
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    color: var(--color-dark-gray);
+    text-align: left;
+    border-radius: 8px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.popup-overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--color-dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.popup-close:hover {
+    background: #f0f0f0;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+.popup-result h3 {
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-row:last-child {
+    border-bottom: none;
+    font-weight: bold;
+    margin-top: 8px;
+    color: var(--color-primary-blue);
+}
+
+.popup .show {
+    visibility: visible;
+    animation: fadeIn 0.3s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 
 .about-us-section {
     padding: 50px 20px;
